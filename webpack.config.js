@@ -3,6 +3,5 @@ module.exports = {
   output: {
   	filename: "./lib/bundle.js"
   },
-  devtool: 'source-map',
-  watch: true
+  devtool: 'source-map'
 };
