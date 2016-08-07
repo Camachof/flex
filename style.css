@@ -1,20 +1,42 @@
-.container {
-  height: 100vh;
-  width: 100vw;
-}
-
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-canvas {
-  display: inline-block;
-  width: 75%;
-  height: 100%;
+#canvas {
   background-color:red;
+  margin-bottom: -5px;
 }
 
 #curves {
-  display: inline-block;
+  background-color: purple;
+  left: 300px;
+}
+
+#trial {
+  background-color: orange;
+}
+
+.customCurve {
+  display: flex;
+  flex-direction: column;
+}
+
+header, #trial {
+  position: absolute;
+}
+
+.canvasBox {
+  background-color: grey;
+}
+
+button {
+  z-index: 100;
+  padding: 10px 15px;
+  margin: 20px auto;
+  color: #FFFDFD;
+  background-color: #555;
+  border: 0 none;
+  cursor: pointer;
+  height: 100%;
 }

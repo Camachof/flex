@@ -4,17 +4,26 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <canvas id="canvas"></canvas>
-      <div id="curves">
-        <button id="dragon">Dragon</button>
-        <button id="koch">Koch</button>
-        <button id="sierpinski">Sierpinski</button>
-        <button id="hilbert">Hilbert</button>
-      </div>
+    <header id="curves">
+      <button id="dragon">Dragon</button>
+      <button id="koch">Koch</button>
+      <button id="sierpinski">Sierpinski</button>
+      <button id="hilbert">Hilbert</button>
+    </header>
+    <div id="trial">
+      <p>Make your own curve using an L-system!</p>
+      <form id="customCurve" class="customCurve" action="index.html" method="post">
+        <input type="text" id="angle" placeholder="angle" value="">
+        <input type="text" id="iterations" placeholder="iterations" value="">
+        <button type="submit" name="button"></button>
+      </form>
     </div>
-    <script type="application/javascript" src="lib/bundle.js"></script>
+    <div class="canvasBox">
+      <canvas id="canvas" />
+    </div>
   </body>
+  <script type="application/javascript" src="lib/bundle.js"></script>
 </html>
