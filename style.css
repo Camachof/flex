@@ -10,11 +10,12 @@
 
 #curves {
   background-color: purple;
-  left: 300px;
+  left: 900px;
 }
 
 #trial {
   background-color: orange;
+  left: 1200px;
 }
 
 .customCurve {
@@ -22,7 +23,7 @@
   flex-direction: column;
 }
 
-header, #trial {
+header, #trial, .instructions {
   position: absolute;
 }
 
