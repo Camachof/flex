@@ -3,41 +3,28 @@
   padding: 0;
 }
 
-#canvas {
-  background-color:red;
-  margin-bottom: -5px;
+.curveToolbar {
+  background-color: blue;
 }
 
-#curves {
+.curveButtons {
+  background-color: green;
+}
+
+.curveCustom {
+  background-color: yellow;
+}
+
+.instructions {
   background-color: purple;
-  left: 900px;
-}
-
-#trial {
-  background-color: orange;
-  left: 1200px;
-}
-
-.customCurve {
-  display: flex;
-  flex-direction: column;
-}
-
-header, #trial, .instructions {
-  position: absolute;
 }
 
 .canvasBox {
-  background-color: grey;
+  background-color: red;
 }
 
-button {
-  z-index: 100;
-  padding: 10px 15px;
-  margin: 20px auto;
-  color: #FFFDFD;
-  background-color: #555;
-  border: 0 none;
-  cursor: pointer;
-  height: 100%;
+#curveToolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

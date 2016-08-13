@@ -2,34 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Curvy</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <body>
-    <header id="curves">
-      <button id="dragon">Dragon</button>
-      <button id="koch">Koch</button>
-      <button id="sierpinski">Sierpinski</button>
-      <button id="hilbert">Hilbert</button>
-    </header>
+    <div class="curveToolbar" id='curveToolbar' draggable="true">
 
+      <div id="curveButtons">
+        <button id="dragon">Dragon</button>
+        <button id="koch">Koch</button>
+        <button id="sierpinski">Sierpinski</button>
+        <button id="hilbert">Hilbert</button>
+      </div>
+
+      <div class="curveCustom">
+        <form id="customForm" class="customForm" action="index.html" method="post">
+          <input type="text" id="angle" placeholder="angle" value="">
+          <input type="text" id="iterations" placeholder="iterations" value="">
+          <button type="submit" name="button"></button>
+        </form>
+      </div>
+
+    </div>
 
     <div class="instructions">
       <h1>What is an <a href="https://en.wikipedia.org/wiki/L-system">L-system</a>?</h1>
-      <p>The <a href="https://en.wikipedia.org/wiki/L-system#Example_6:_Dragon_curve">Dragon</a>, <a href="https://en.wikipedia.org/wiki/Hilbert_curve#Representation_as_Lindenmayer_system">Hilbert</a>, <a href="https://en.wikipedia.org/wiki/L-system#Example_5:_Sierpinski_triangle">Sierpinski</a> and <a href="https://en.wikipedia.org/wiki/L-system#Example_4:_Koch_curve">Koch</a> curves are produced by only drawing forward and turning left or right.</p>
+      <p>The <a href="https://en.wikipedia.org/wiki/L-system#Example_6:_Dragon_curve">Dragon</a>, <a href="https://en.wikipedia.org/wiki/Hilbert_curve#Representation_as_Lindenmayer_system">Hilbert</a>, <a href="https://en.wikipedia.org/wiki/L-system#Example_5:_Sierpinski_triangle">Sierpinski</a> and <a href="https://en.wikipedia.org/wiki/L-system#Example_4:_Koch_curve">Koch</a> curves are produced by only drawing forward and turning left or right by a particular angle.</p>
+
+      <p>
+        Curves are wild beasts that inhabit the math world. Try changing the number of iterationis to experiment, but beware! Anything past 10 is bound to be too big or too impredictable to intellegbly render on screen.
+      </p>
+
+      <p>
+        Curves feed on angles. See what curve you can make!
+      </p>
+
     </div>
 
-    <div id="trial">
-      <form id="customCurve" class="customCurve" action="index.html" method="post">
-        <input type="text" id="angle" placeholder="angle" value="">
-        <input type="text" id="iterations" placeholder="iterations" value="">
-        <button type="submit" name="button"></button>
-      </form>
-    </div>
-    <div class="canvasBox">
+    <div class="canvasBox" id='target'>
       <canvas id="canvas" />
     </div>
+
   </body>
   <script type="application/javascript" src="lib/bundle.js"></script>
 </html>
