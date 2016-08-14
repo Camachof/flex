@@ -4,7 +4,14 @@
 }
 
 .curveToolbar {
-  background-color: blue;
+  /*background-color: blue;*/
+  border-radius: 3px;
+  border: 1px solid;
+  cursor: -webkit-grab; cursor: -moz-grab;
+}
+
+.curveToolbar:active {
+  cursor: -webkit-grabbing; cursor:-moz-grabbing;
 }
 
 .curveButtons {
@@ -12,19 +19,57 @@
 }
 
 .curveCustom {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .instructions {
-  background-color: purple;
+  /*background-color: purple;*/
+  position: absolute;
+  margin: 2%
 }
 
 .canvasBox {
-  background-color: red;
+  /*background-color: red;*/
 }
 
 #curveToolbar {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 259px;
+  left: 44px;
+  z-index: 100;
+}
+
+input {
+  display: block;
+  font-size: 17px;
+  margin: 2%;
+  padding: 1%;
+  width: 50%;
+  border-radius: 3px;
+  border: 1px solid #BABABA;
+}
+
+button {
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 48px;
+  width: 32%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+p {
+  width: 33%;
+  font-size: 20px;
 }
