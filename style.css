@@ -34,8 +34,10 @@
 
 #curveToolbar {
   position: absolute;
-  top: 259px;
-  left: 44px;
+  /*top: 259px;
+  left: 44px;*/
+  left: 2%;
+  top: 75%;
   z-index: 100;
 }
 
@@ -63,13 +65,14 @@ button {
 }
 
 h1 {
+  font-family: 'Bungee Outline', cursive;
   font-size: 48px;
-  width: 32%;
-  text-align: center;
+  width: 100%;
   margin-bottom: 1%;
 }
 
 p {
-  width: 33%;
+  font-family: 'Open Sans', sans-serif;
+  width: 32%;
   font-size: 20px;
 }
