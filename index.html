@@ -20,14 +20,15 @@
 
       <div class="curveCustom">
         <form id="customForm" class="customForm" action="index.html" method="post">
-          <div class="angleParent">
-            <input type="text" id="angle" placeholder="angle" value="">
-            <div class="buttons">
-              <div class="arrow-up"></div>
-              <div class="arrow-down"></div>
+          <div class="iterationParent">
+            <input type="text" id="iterations" placeholder="iterations" value="">
+            <div id="buttons">
+              <div id="arrow-up"></div>
+              <div id="arrow-down"></div>
             </div>
           </div>
-          <input type="text" id="iterations" placeholder="iterations" value="">
+          <input type="text" id="angle" placeholder="angle" value="">
+          <input type="range" name="angleInput" min="0" max="360" value="" id='inputRange'>
           <button type="submit" name="button">Submit</button>
         </form>
       </div>
