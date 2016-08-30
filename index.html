@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
 
@@ -21,14 +22,24 @@
       <div class="curveCustom">
         <form id="customForm" class="customForm" action="index.html" method="post">
           <div class="iterationParent">
+            <label for="iterations">iterations:</label>
             <input type="text" id="iterations" placeholder="iterations" value="">
             <div id="buttons">
               <div id="arrow-up"></div>
               <div id="arrow-down"></div>
             </div>
           </div>
-          <input type="text" id="angle" placeholder="angle" value="">
-          <input type="range" name="angleInput" min="0" max="360" value="" id='inputRange'>
+          <div class="angleParent">
+            <label class="angleLable" for="angle">angle:</label>
+            <input type="text" id="angle" placeholder="angle" value="">
+            <input type="range" name="angleInput" min="0" max="360" value="" id='inputRange'>
+          </div>
+          <label class="speedLable" for="dropdown">speed:</label>
+          <select id="dropdown" name="">
+            <option value="1">fast</option>
+            <option value="2">blazing</option>
+            <option value="3">insane</option>
+          </select>
           <button type="submit" name="button">Submit</button>
         </form>
       </div>

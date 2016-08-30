@@ -25,14 +25,31 @@
   z-index: 100;
 }
 
-input {
+input, select {
   display: inline;
   font-size: 17px;
   margin: 2%;
   padding: 1%;
-  width: 50%;
+  width: 19%;
   border-radius: 3px;
   border: 1px solid #BABABA;
+}
+
+label {
+  line-height: 53px;
+  margin-left: 2%;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#dropdown {
+  width: 21%;
+  height: 36px;
+}
+
+#inputRange {
+  display: inline-block;
+  width: 36%;
 }
 
 button {
@@ -61,7 +78,7 @@ p {
   font-size: 20px;
 }
 
-.iterationParent {
+.iterationParent, .angleParent {
   display: flex;
 }
 
@@ -93,4 +110,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.angleLable {
+  margin-right: 7%;
+}
+
+.speedLable {
+  margin-right: 5%;
 }
