@@ -23,7 +23,7 @@
         <form id="customForm" class="customForm" action="index.html" method="post">
           <div class="iterationParent">
             <label for="iterations">iterations:</label>
-            <input type="text" id="iterations" placeholder="iterations" value="">
+            <input type="text" id="iterations" placeholder="1" value="">
             <div id="buttons">
               <div id="arrow-up"></div>
               <div id="arrow-down"></div>
@@ -31,8 +31,8 @@
           </div>
           <div class="angleParent">
             <label class="angleLable" for="angle">angle:</label>
-            <input type="text" id="angle" placeholder="angle" value="">
-            <input type="range" name="angleInput" min="0" max="360" value="" id='inputRange'>
+            <input type="text" id="angle" placeholder="90" value="">
+            <input type="range" name="angleInput" min="0" max="360" value="90" id='inputRange'>
           </div>
           <label class="speedLable" for="dropdown">speed:</label>
           <select id="dropdown" name="">
@@ -47,7 +47,8 @@
     </div>
 
     <div class="instructions">
-      <h1>What is an <a href="https://en.wikipedia.org/wiki/L-system">L-system</a>?</h1>
+      <h1
+      style="white-space: nowrap">What is an <a href="https://en.wikipedia.org/wiki/L-system">L-system</a>?</h1>
 
       <p>
         Pick on any curve below and try changing the number of iterations or angle to experiment but beware! As curves grow bigger, they become more eccentric and difficult to tame.

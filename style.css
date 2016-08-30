@@ -21,7 +21,8 @@
 #curveToolbar {
   position: absolute;;
   left: 2%;
-  top: 75%;
+  /*top: 75%;*/
+  bottom: 2%;
   z-index: 100;
 }
 
@@ -68,13 +69,13 @@ button {
 h1 {
   font-family: 'Bungee Outline', cursive;
   font-size: 48px;
-  width: 100%;
+  width: 37%;
   margin-bottom: 1%;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
-  width: 32%;
+  width: 37%;
   font-size: 20px;
 }
 
@@ -108,7 +109,7 @@ p {
 
 #buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
 }
 
