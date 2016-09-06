@@ -1,7 +1,7 @@
 # curvy
 
 #### What is an L-System?
-Check out the wikipedia article here. All four of the curves that I implemented are used as examples in the article.
+Check out the wikipedia article [here](https://en.wikipedia.org/wiki/L-system). All four of the curves that I implemented are used as examples in the article.
 
 ## Overview
 
