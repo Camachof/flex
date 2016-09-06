@@ -27,14 +27,16 @@ B → + A F − B F B − F A +
 Since the initial ```state``` is ```A``` and the rules dictate that ```A → − B F + A F A + F B −```, this is what ```state looks like after the first iteration:
 
 ```B F + A F A + F B −```
-// picture
+
+![hilbert 1](http://res.cloudinary.com/doilr7vvv/image/upload/v1473203040/Screen_Shot_2016-09-06_at_4.01.11_PM_kmpi0p.png "Hilbert First Iteration")
 
 The second iteration will iterate through the previous state and replace all variables again:
 
 ```
 +-AF+BFB+FA-F-+BF-AFA-FB+F+BF-AFA-FB+-F-AF+BFB+FA-+
 ```
-// picture
+
+![hilbert 2](http://res.cloudinary.com/doilr7vvv/image/upload/v1473203219/Screen_Shot_2016-09-06_at_4.01.25_PM_kutt2n.png "Hilbert Second Iteration")
 
 ##Implementation
 
