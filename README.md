@@ -24,7 +24,7 @@ THe Hilbert Curve is a great example:
 A → − B F + A F A + F B −  
 B → + A F − B F B − F A +
 
-Since the initial ```state``` is ```A``` and the rules dictate that ```A → − B F + A F A + F B −```, this is what ```state looks like after the first iteration:
+Since the initial ```state``` is ```A``` and the rules dictate that ```A → − B F + A F A + F B −```, this is what state looks like after the first iteration:
 
 ```B F + A F A + F B −```
 
